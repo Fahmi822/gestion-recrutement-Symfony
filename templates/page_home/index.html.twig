@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{{asset('images/loading.gif')}}" alt="#" /></div>
+    </div>
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{{asset('images/logo.png')}}" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="header_information">
+                            <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarsExample04">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="about.html"> About Us  </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="clients.html">Our Clients</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="ourwork.html">Our Work</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                    <div class="sign_btn"><a href="#">Get A Quote</a></div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner -->
+    <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" src="{{asset('images/banner.jpg')}}" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <h1> <span>We Provide</span> Web Services</h1>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                    <div class="carousel-caption relative">
+                        <h1> <span>We Provide</span> Web Services</h1>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>© 2019 All Rights Reserved. <a href="https://html.design/"> Free Html Templates</a></p>
+            </div>
+        </div>
+
+    </div>
+    </body>
+{% endblock %}
